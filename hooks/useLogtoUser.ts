@@ -49,12 +49,12 @@ export const useLogtoUser = (): UseLogtoUser => {
     fetchUserInfo();
   }, []);
 
-  const signIn = (redirectUri: string = 'http://localhost:3000') => {
+  const signIn = (redirectUri: string = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000') => {
     console.log('signIn called', redirectUri);
     window.location.href = `/api/logto/sign-in?redirectUri=${encodeURIComponent(redirectUri)}`;
   };
 
-  const signOut = (redirectUri: string = 'http://localhost:3000') => {
+  const signOut = (redirectUri: string = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000') => {
     window.location.href = `/api/logto/sign-out?redirectUri=${encodeURIComponent(redirectUri)}`;
   };
 

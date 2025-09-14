@@ -480,7 +480,7 @@ export default function Home() {
           <p style={{ color: '#1f2d3d', fontSize: '1.2rem', margin: '0 0 32px 0', maxWidth: '500px' }}>
             Get your own subdomain for your Hack Club project! Sign in to get started.
           </p>
-          <button onClick={() => signIn('http://localhost:3000')} className="hc-button">
+          <button onClick={() => signIn()} className="hc-button">
             <Icon glyph="door-enter" size={16} style={{ marginRight: '8px' }} />
             Sign In with Logto
           </button>
