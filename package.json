@@ -4,11 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "npm install --force && next build --turbopack",
+    "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint",
-    "install:force": "npm install --force",
-    "build:force": "npm install --force && next build --turbopack"
+    "lint": "eslint"
   },
   "dependencies": {
     "@hackclub/icons": "^0.0.15",
