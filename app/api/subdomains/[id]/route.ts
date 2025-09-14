@@ -2,7 +2,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Airtable from 'airtable';
 import LogtoClient from '@logto/next';
-import config from '../../../logto.config';
+import config from '../../../../logto.config';
 import { serialize } from 'cookie';
 
 const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_BASE_ID || '');
